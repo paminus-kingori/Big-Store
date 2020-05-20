@@ -1,0 +1,65 @@
+
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+                <style>
+                   
+                   #emptyLove{
+    width:20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+#Love{
+    width: 20px;
+    margin: 5px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+    animation: bigUp .9s 0s ease-out forwards;
+
+}
+@keyframes bigUp{
+    0%{
+        transform:scale(1.6);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+                    </style>
+  <body>
+                    <img src="empty love.svg" alt="like" id="emptyLove">
+                    <img src="colored love.svg" alt="like" id="Love"> 
+
+
+    <script>
+        //animating the like btn
+const likeBtn = document.querySelectorAll('#emptyLove');
+const liked = document.querySelectorAll('#Love');
+console.log(likeBtn.length);
+console.log(liked);
+let length = likeBtn.length - 1;
+
+
+function likeAct(array1,array2,i){
+array1[i].addEventListener('click',function(){
+        array1[i].style.display = 'none';
+        array2[i].style.display = "block";
+});
+array2[i].addEventListener('click',function(){
+    array2[i].style.display = 'none';
+    array1[i].style.display = 'block';
+});
+}
+
+for(x=0;x<=length;x++){
+likeAct(likeBtn,liked,x);
+}
+        </script>
+     </body>
+</html>

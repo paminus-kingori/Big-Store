@@ -1,0 +1,76 @@
+.nav-section{
+    margin-top: 5px;
+    padding: 2px 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mycart{
+float: right;
+cursor: pointer;
+}
+.cartBtn{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 3px 8px;
+    margin: 5px;
+    background:  #ce0c0c ;
+    color: white;
+
+}
+.cartBtn:hover,.cartBtn:active{
+    background:#c36b6b;
+}
+#mycart{
+    cursor: pointer;
+}
+.mycart img{
+    width: 20px;
+    height: 20px;
+}
+.links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.links a:hover{
+    color: #fff;
+}
+.links{
+    word-spacing: 10px;
+    color: #000;
+}
+.links .menLink{
+    color: rgb(228, 228, 228);
+}
+.links .home{
+    background-color: #e62626;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.links .home:hover,.links .home:active{
+    background-color: #ff5757
+}
+.login{
+    width: max-content;
+    height: max-content;
+    padding:5px 15px;
+    border:2px solid white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login:hover,.login:active{
+    border: 2px solid #ff5757;
+}
+.search{
+    background-color: white;
+    border: none;
+}
+#searchIcon{
+    transform: rotateZ(271deg);
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+        /* Beginning of home icon */
+
+        .full-icon{
+            
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 22px;
+    display: flex;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+        
+        .dot{
+            width: 3px;
+    height:3px;
+    border-radius: 50%;
+    background-color: #000;
+
+        }
+        .line{
+            width: 11px;
+    height: 2px;
+    border-radius: 10px;
+    margin-left: 3px;
+    background-color: #000;
+
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+            opacity: 1;
+            transform: scale(0);
+            animation: opac 1.3s 0.1s ease-out forwards;
+
+        }
+        .no-padding{
+            border: 2px solid black;
+    border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+    padding: 5px;
+    width: 22px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin: 5px;
+        }
+        .showIcon{
+            display: flex;
+        }
+        .showHref{
+            display: grid;
+        }
+        .removeIcon{
+            display: none;
+        }
+        .forward-slash{
+            width: 20px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    animation: rotateF 1s 0.1s ease-out forwards;
+        }
+        .backward-slash{
+            
+            width: 20px;
+            height: 2px;
+            background-color: #000;
+            animation: rotateL 1s 0.1s ease-out forwards;
+        }
+        .hrefs{
+            display: none;
+            position: absolute;
+            transform: translateY(70%);
+            flex-direction: column;
+            background-color: rgb(44, 199, 39);
+            width: max-content;
+            padding: 5px;
+            height: max-content;
+            z-index: 8;
+        }
+        @keyframes rotateF {
+            0%{
+                transform: translateY(-0.2em);
+            }
+            100%{
+                transform: rotate(123deg);
+            }
+        }
+        @keyframes rotateL {
+            0%{
+                transform: translateY(0.2em);
+            }
+            100%{
+                transform: rotate(45deg);
+            }
+        }
+        @keyframes opac {
+            0%{
+                /* opacity: 0; */
+                transform: scale(0.3);
+            }
+            100%{
+                /* opacity: 1; */
+                transform: scale(1);
+            }
+        }
+
+        /* end of home icon */

@@ -1,0 +1,50 @@
+.carosel{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
+}
+.carosel-slide{
+    display: flex;
+}
+.carosel-slide img{
+    height: 100%;
+    width: 100%;
+}
+#prev{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 4%;
+    width: 15px;
+    height: 25px;
+    cursor: pointer;
+}
+#next{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    width: 15px;
+    height: 25px;
+    right: 4%;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top:0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fbfd90;
+    
+
+    text-shadow: 1px 1px 4px black;
+}

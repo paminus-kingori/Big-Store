@@ -1,0 +1,6 @@
+.category-item:nth-child(4){
+flex-grow: .6;
+}
+.category-item:nth-child(5){
+    flex-grow: .2;
+}

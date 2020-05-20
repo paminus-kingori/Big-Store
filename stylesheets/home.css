@@ -1,0 +1,7 @@
+.image-holder{
+    align-self: flex-end;
+}
+.image-holder-up{
+    align-self: start;
+    position: relative;
+}
