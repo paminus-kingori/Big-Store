@@ -1,9 +1,9 @@
 //animating the like btn
-const likeBtn = document.querySelectorAll('#emptyLove');
-const liked = document.querySelectorAll('#Love');
-console.log(likeBtn.length);
-console.log(liked);
-let length = likeBtn.length - 1;
+const emptyLikeBtn = document.querySelectorAll('#emptyLove');
+const Liked = document.querySelectorAll('#Love');
+console.log(emptyLikeBtn.length);
+console.log(Liked);
+let length = emptyLikeBtn.length - 1;
 
 
 function likeAct(array1,array2,i){
@@ -18,5 +18,5 @@ array2[i].addEventListener('click',function(){
 }
 
 for(x=0;x<=length;x++){
-likeAct(likeBtn,liked,x);
+likeAct(emptyLikeBtn,Liked,x);
 }
